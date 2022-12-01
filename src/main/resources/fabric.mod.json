@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "resourcepack-dev-tool",
+  "version": "${version}",
+  "name": "Resourcepack Dev Tool",
+  "description": "Handy Resourcepack tools for developers",
+  "authors": [
+    "LoneDev"
+  ],
+  "contact": {},
+  "license": "LoneDev super professional License",
+  "icon": "assets/resourcepack-dev-tool/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "dev.lone.resourcepackdevtool.client.ResourcepackDevToolClient"
+    ],
+    "main": [
+      "dev.lone.resourcepackdevtool.ResourcepackDevTool"
+    ]
+  },
+  "mixins": [
+    "resourcepack-dev-tool.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.8",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
